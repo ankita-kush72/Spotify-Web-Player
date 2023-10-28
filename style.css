@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 4rem;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 0.85rem;
+}
+.brand img{
+    width: 2.96rem;
+    padding: 0 0.60rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+   min-height: 72vh;
+   background-color: black;
+   color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 1.5rem auto;
+   width: 70%;
+   border-radius: 0.75rem;
+   padding: 2.5rem;
+}
+
+.container-background{
+    background-image: url('imges/bg\ \(1\).jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 6rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 0.85rem; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 4.55rem;
+}
+
+.songItem{
+    height: 3rem;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 0.85rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.songItem img{
+    width: 2.85rem;
+    margin: 0 1.5rem;
+    border-radius: 2.3rem;
+}
+
+.timestamp{
+    margin: 0 2.5rem;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(192, 192, 207);
+    }
+    .container-background{
+        background-image: url('imges/Untitled\ design\ \(1\).png');
+    }
+    .songItem {
+        font-size: 0.95rem;
+        
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    .icons{
+        font-size:0.75rem
+    }
+    .container {
+        margin-top: 3rem;
+        height: 95vh;
+    }
+    .songItemContainer{
+        margin-top: 2rem;
+        height: 80vh;
+    }
+  }
+
+  @media only screen and (width:900px) {
+    body {
+      background-color: rgb(216, 138, 138);
+    }
+    .container-background{
+        background-image: url('imges/Untitled\ design\ \(1\).png');
+    }
+    .songItem {
+        font-size: 0.85rem;
+        
+    }
+    
+     h1{
+        font-size: 3rem;
+    }
+    .icons{
+        font-size:0.65rem
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(141, 221, 161);
+    }
+    .container-background{
+        background-image: url('imges/Untitled\ design\ \(1\).png');
+    }
+    .songItem {
+        font-size: 0.75rem;
+    }
+    
+    h1{
+        font-size: 2rem;
+    }
+    .icons{
+        font-size:0.55rem
+    }
+    .container{
+        min-height: 100vh;
+    }
+    
+    .bottom{
+        position: sticky;
+        bottom: 0;
+        height: 6rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+  }
+
+  @media only screen and (max-width: 400px) {
+    body {
+      background-color: rgb(183, 177, 221);
+    }
+    .container-background{
+        background-image: url('imges/Untitled\ design\ \(1\).png');
+    }
+    .songItem {
+        font-size: 0.65rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .icons{
+        font-size:0.45rem
+    }
+    .bottom{
+        position: sticky;
+        bottom: 0;
+        height: 6rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    
+  }
